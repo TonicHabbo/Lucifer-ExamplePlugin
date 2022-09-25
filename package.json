@@ -1,0 +1,22 @@
+{
+  "name": "example-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/MyClass.ts",
+  "scripts": {
+    "clean": "rm -rf out-tsc && rm -rf output",
+    "build": "npm run clean && rollup -c rollup.config.js"
+  },
+  "author": "Laynester",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.5",
+    "rollup": "^2.56.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "lucifer-ts": "https://github.com/TonicHabbo/Lucifer-API",
+    "typeorm": "^0.3.10"
+  }
+}

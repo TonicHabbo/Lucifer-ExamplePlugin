@@ -1,0 +1,6 @@
+{
+    "name": "ExamplePlugin",
+    "author": "Laynester",
+    "entry": "src/MyClass.ts@MyClass",
+    "enabled": false
+}
