@@ -29,18 +29,6 @@ export class ExamplePlugin extends Plugin
     }
 
     /*
-     * Web will cause this function to register normal routes
-     */
-    public registerThemeRoutes(router: Router): void {
-        this.LOGGER.log('Registered Theme Routes')
-        router.get('/example', (req: IRequest, res: Response) => {
-            res.json({
-                message: "Returns message on /api/example"
-            })
-        })
-    }
-
-    /*
      * Web will cause this function to register API Routes
      */
     public registerApiRoutes(router: Router): void {
